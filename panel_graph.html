@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>盤體關係系統圖</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body { font-family: "Microsoft JhengHei", sans-serif; background-color: #f4f7f6; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        #graph-container { margin-top: 20px; width: 100%; min-height: 800px; overflow: auto; background: white; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>盤體上下游關係系統圖 (垂直)</h1>
+        <p>DWG: S11-電氣圖例昇位及單線圖.dwg | 規格說明: %%O 已轉換為 mm²</p>
+        <div id="graph-container">
+            <pre class="mermaid">flowchart TD
+    v1["EVB3b"]
+    v2["EVB4b"]
+    v3["EVB3a"]
+    v4["EVB4a"]
+    v5["EVB1"]
+    v6["EVB2a"]
+    v7["MP"]
+    v8["PFB1a"]
+    v9["PB1b"]
+    v10["PB1a"]
+    v11["PSWB1"]
+    v12["TRTT"]
+    v13["TTB1"]
+    v14["FTRB1"]
+    v15["FRB1"]
+    v16["FPB1b"]
+    v17["MTRB"]
+    v18["MTR"]
+    v19["MPB"]
+    v20["BLB1"]
+    v21["BPWB4"]
+    v22["BPWB2"]
+    v23["BPR1"]
+    v24["BPR3"]
+    v25["BGTRB1"]
+    v26["BGRB1"]
+    v27["BGL1"]
+    v28["BFTRB1"]
+    v29["BFRB1"]
+    v30["BFPR3"]
+    v31["BFPR2"]
+    v32["KWHEVB3b"]
+    v33["KWHEVB2b"]
+    v34["EVB2b"]
+    v35["KWHMPB"]
+    v36["KWHEVB3a"]
+    v37["KWHEVB1"]
+    v38["KWHMPA"]
+    v39["MPA"]
+    v40["KWHMP"]
+    v41["PP7"]
+    v42["PP6"]
+    v43["PP5"]
+    v44["PP4"]
+    v45["PP3"]
+    v46["PP2"]
+    v47["PP1"]
+    v48["EB1b"]
+    v49["E1b"]
+    v50["EB1a"]
+    v51["E1a"]
+    v52["EB2a"]
+    v53["RB2a"]
+    v54["RB2b"]
+    v55["MR"]
+    v56["R1b"]
+    v57["R1a"]
+    v58["LB2a"]
+    v59["LB2b"]
+    v60["L1b"]
+    v61["LL1b"]
+    v62["L1a"]
+    v63["LL1a"]
+    v64["PFB1"]
+    v65["PB4b"]
+    v66["PSB1b"]
+    v67["PSW1B1"]
+    v68["PKB1"]
+    v69["PKB4"]
+    v70["PB4a"]
+    v71["PSB1a"]
+    v72["PS1B4"]
+    v73["PWB4"]
+    v74["PS2B4"]
+    v75["FP1b"]
+    v76["FPB1a"]
+    v77["FP1a"]
+    v78["AC1b"]
+    v79["AC1a"]
+    v80["P1b"]
+    v81["P1a"]
+    v82["PWB3"]
+    v83["PSWB2"]
+    v84["PSB4"]
+    v85["GLB1"]
+    v86["FPB4a"]
+    v87["FPB4"]
+    v88["LL20"]
+    v89["BKWH10"]
+    v90["LL19"]
+    v91["BKWH9"]
+    v92["LL18"]
+    v93["BKWH8"]
+    v94["LL17"]
+    v95["BKWH7"]
+    v96["LL16"]
+    v97["BKWH6"]
+    v98["LL15"]
+    v99["BKWH5"]
+    v100["LL14"]
+    v101["BKWH4"]
+    v102["LL13"]
+    v103["BKWH3"]
+    v104["LL12"]
+    v105["BKWH2"]
+    v106["LL11"]
+    v107["BKWH1"]
+    v108["LL10"]
+    v109["AKWH10"]
+    v110["LL9"]
+    v111["AKWH9"]
+    v112["LL8"]
+    v113["AKWH8"]
+    v114["LL7"]
+    v115["AKWH7"]
+    v116["LL6"]
+    v117["AKWH6"]
+    v118["LL5"]
+    v119["AKWH5"]
+    v120["LL4"]
+    v121["AKWH4"]
+    v122["LL3"]
+    v123["AKWH3"]
+    v124["LL2"]
+    v125["AKWH2"]
+    v126["LL1"]
+    v127["AKWH1"]
+    v1 -- "[(PEX200mm²x4,G80mm²) GIP104]-3" --> v2
+    v3 -- "[(PEX200mm²x4,G80mm²) GIP104]-3" --> v4
+    v5 -- "[(PEX200mm²x4,G80mm²) GIP104]-3" --> v6
+    v7 -- "PEX50mm²x4,G14mm² EMT63" --> v8
+    v7 -- "PEX80mm²x4,G14mm² EMT63" --> v9
+    v7 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v10
+    v7 -- "PEX22mm²x4/C,G5.5mm² EMT51" --> v11
+    v7 -- "PEX50mm²x2,G14mm² EMT51/PEX50mm²x3,G22mm² EMT51" --> v12
+    v12 -- "PEX50mm²x2,G14mm² EMT51/PEX50mm²x3,G22mm² EMT51" --> v13
+    v7 -- "FR5.5mm²x3/C,G2.0 EMT39/FR5.5mm²x4/C,G8mm² EMT39" --> v14
+    v14 -- "FR5.5mm²x3/C,G2.0 EMT39/FR5.5mm²x4/C,G8mm² EMT39" --> v15
+    v7 -- "FR50mm²x4,G14mm² EMT63" --> v16
+    v7 -- "PEX2.0x3/C,G2.0 EMT25/PEX5.5mm²x4/C,G8mm² EMT39" --> v17
+    v17 -- "PEX2.0x3/C,G2.0 EMT25/PEX5.5mm²x4/C,G8mm² EMT39" --> v18
+    v19 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v20
+    v19 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v21
+    v19 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v22
+    v19 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v23
+    v19 -- "PEX50mm²x4,G14mm² EMT63" --> v24
+    v7 -- "PEX2.0x3/C,G2.0 EMT25/PEX5.5mm²x4/C,G8mm² EMT39" --> v25
+    v25 -- "PEX2.0x3/C,G2.0 EMT25/PEX5.5mm²x4/C,G8mm² EMT39" --> v26
+    v19 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v27
+    v19 -- "FR14mm²x3/C,G5.5mm² EMT39/FR22mm²x4/C,G22mm² EMT51" --> v28
+    v28 -- "FR14mm²x3/C,G5.5mm² EMT39/FR22mm²x4/C,G22mm² EMT51" --> v29
+    v19 -- "FR22mm²x4/C,G8mm² EMT51" --> v30
+    v19 -- "FR200mm²x4,G22mm² GIP104" --> v31
+    v32 -- "[(PEX200mm²x4,G80mm²) GIP104]-3" --> v1
+    v33 -- "[(PEX200mm²x4,G80mm²) GIP104]-3" --> v34
+    v35 -- "PEX250mm²x4,G50mm² GIP104" --> v19
+    v36 -- "[(PEX200mm²x4,G80mm²) GIP104]-3" --> v3
+    v37 -- "[(PEX200mm²x4,G80mm²) GIP104]-3" --> v5
+    v38 -- "PEX250mm²x4,G50mm² GIP104" --> v39
+    v40 -- "[PEX(200mm²x4,G80mm²) GIP104]-3" --> v7
+    v41 -- "[PEX(200mm²x4,G80mm²) GIP104]-3" --> v32
+    v42 -- "[PEX(200mm²x4,G80mm²) GIP104]-3" --> v33
+    v43 -- "PEX250mm²x4,G50mm² GIP104" --> v35
+    v44 -- "[PEX(200mm²x4,G80mm²) GIP104]-3" --> v36
+    v45 -- "[PEX(200mm²x4,G80mm²) GIP104]-3" --> v37
+    v46 -- "PEX250mm²x4,G50mm² GIP104" --> v38
+    v47 -- "[PEX(200mm²x4,G80mm²) GIP104]-3" --> v40
+    v48 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v49
+    v50 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v51
+    v52 -- "PEX8mm²x4/C,G5.5mm² EMT39" --> v50
+    v53 -- "PEX38mm²x4/C,G5.5mm² EMT51" --> v54
+    v55 -- "PEX125mm²x4,G14mm² EMT75" --> v53
+    v55 -- "PEX50mm²x4,G8mm² EMT63" --> v56
+    v55 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v57
+    v58 -- "PEX22mm²x4/C,G5.5mm² EMT51" --> v59
+    v60 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v61
+    v62 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v63
+    v8 -- "PEX30mm²x4/C,G8mm² EMT51" --> v64
+    v9 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v65
+    v9 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v66
+    v9 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v67
+    v68 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v69
+    v10 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v70
+    v10 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v71
+    v10 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v68
+    v72 -- "PEX8mm²x4/C,G5.5mm² EMT39" --> v73
+    v72 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v74
+    v16 -- "FR14mm²x4/C,G5.5mm² EMT39" --> v75
+    v76 -- "FR8mm²x4/C,G5.5mm² EMT39" --> v77
+    v7 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v52
+    v7 -- "PEX150mm²x4,G22mm² GIP104" --> v78
+    v7 -- "PEX100mm²x4,G14mm² EMT75" --> v79
+    v7 -- "PEX50mm²x4,G8mm² EMT63" --> v58
+    v7 -- "PEX22mm²x4/C,G5.5mm² EMT51" --> v60
+    v7 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v62
+    v7 -- "PEX80mm²x4,G14mm² EMT63" --> v80
+    v7 -- "PEX14mm²x4/C,G5.5mm² EMT39" --> v81
+    v7 -- "PEX5.5mm²x4/C,G5.5mm² EMT39" --> v82
+    v7 -- "PEX60mm²x4,G14mm² EMT63" --> v72
+    v7 -- "PEX100mm²x4,G14mm² EMT75" --> v83
+    v7 -- "PEX50mm²x4,G14mm² EMT63" --> v84
+    v7 -- "PEX8mm²x4/C,G5.5mm² EMT39" --> v85
+    v7 -- "[(FR150mm²x4,G38mm²) GIP104]-2" --> v86
+    v7 -- "[(FR150mm²x4,G38mm²) GIP104]-2" --> v87
+    v88 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v89
+    v90 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v91
+    v92 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v93
+    v94 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v95
+    v96 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v97
+    v98 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v99
+    v100 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v101
+    v102 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v103
+    v104 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v105
+    v106 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v107
+    v108 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v109
+    v110 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v111
+    v112 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v113
+    v114 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v115
+    v116 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v117
+    v118 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v119
+    v120 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v121
+    v122 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v123
+    v124 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v125
+    v126 -- "[PEX(250mm²x3,G80mm²) GIP104]-2" --> v127</pre>
+        </div>
+    </div>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'default',
+            flowchart: { useMaxWidth: false, htmlLabels: true, curve: 'stepAfter' } 
+        });
+    </script>
+</body>
+</html>
